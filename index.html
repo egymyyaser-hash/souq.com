@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souqna | سوقنا</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- رأس الموقع -->
+    <header class="header">
+        <a href="#" class="logo">🛍️ سوقنا <span>Souqna</span></a>
+
+        <nav class="nav">
+            <a href="#home">الرئيسية</a>
+            <a href="#categories">الأقسام</a>
+            <a href="#products">المنتجات</a>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <main id="home">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="welcome">أهلاً بيك في سوقنا</p>
+                <h1>كل اللي محتاجه<br>في مكان واحد</h1>
+                <p class="hero-text">
+                    اكتشف منتجات متنوعة من الملابس والأدوات المنزلية.
+                </p>
+                <a href="#categories" class="main-button">
+                    اكتشف المنتجات
+                </a>
+            </div>
+        </section>
+
+        <!-- الأقسام -->
+        <section id="categories" class="section">
+            <h2>تسوق حسب القسم</h2>
+            <p class="section-description">اختار القسم اللي بتحبه</p>
+
+            <div class="categories-grid">
+                <button class="category-card active" data-category="all">
+                    <span>🛍️</span>
+                    <strong>كل المنتجات</strong>
+                </button>
+
+                <button class="category-card" data-category="men">
+                    <span>👔</span>
+                    <strong>ملابس رجالي</strong>
+                </button>
+
+                <button class="category-card" data-category="women">
+                    <span>👗</span>
+                    <strong>ملابس حريمي</strong>
+                </button>
+
+                <button class="category-card" data-category="kids">
+                    <span>🧸</span>
+                    <strong>ملابس أطفال</strong>
+                </button>
+
+                <button class="category-card" data-category="lingerie">
+                    <span>🎀</span>
+                    <strong>لانجري</strong>
+                </button>
+
+                <button class="category-card" data-category="home">
+                    <span>🏠</span>
+                    <strong>أدوات منزلية</strong>
+                </button>
+            </div>
+        </section>
+
+        <!-- إدارة وعرض المنتجات -->
+        <section id="products" class="section products-section">
+            <div class="products-heading">
+                <div>
+                    <h2>منتجاتنا</h2>
+                    <p class="section-description">
+                        كل منتجاتك في مكان واحد
+                    </p>
+                </div>
+
+                <span id="product-count" class="product-count">
+                    0 منتج
+                </span>
+            </div>
+
+            <!-- منطقة رفع الصور -->
+            <div class="upload-panel">
+                <div class="upload-icon">📸</div>
+                <h3>أضف منتجاتك بسهولة</h3>
+                <p>اختار صور المنتجات من جهازك، وتقدر تحدد صور كتير مرة واحدة.</p>
+
+                <label for="image-upload" class="upload-button">
+                    + اختار صور المنتجات
+                </label>
+
+                <input
+                    type="file"
+                    id="image-upload"
+                    accept="image/*"
+                    multiple
+                    hidden
+                >
+
+                <p class="upload-note">
+                    الصور بتظهر في الموقع بعد اختيارها.
+                </p>
+            </div>
+
+            <!-- المنتجات هتظهر هنا -->
+            <div id="product-grid" class="products-grid">
+                <div class="empty-state">
+                    <span>🛒</span>
+                    <h3>لسه مفيش منتجات</h3>
+                    <p>ارفع أول مجموعة صور وابدأ تنظيم منتجاتك.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- نهاية الموقع -->
+    <footer class="footer">
+        <h3>Souqna | سوقنا</h3>
+        <p>كل اللي محتاجه.. في مكان واحد ❤️</p>
+        <p>جميع الحقوق محفوظة © Souqna</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
